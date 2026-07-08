@@ -1,0 +1,25 @@
+{
+    "target": "esp32c6",
+    "builds": [
+        {
+            "name": "esp32-c6-super-mini",
+            "sdkconfig_append": [
+                "CONFIG_BOARD_TYPE_ESP32_C6_SUPER_MINI=y",
+                "CONFIG_ESPTOOLPY_FLASHSIZE_4MB=y",
+                "CONFIG_PARTITION_TABLE_CUSTOM_FILENAME=\"partitions/v2/4m.csv\"",
+                "# CONFIG_LANGUAGE_ZH_CN is not set",
+                "CONFIG_LANGUAGE_ID_ID=y",
+                "CONFIG_USE_ESP_WAKE_WORD=y",
+                "CONFIG_SR_WN_WN9S_ALEXA=y",
+                "CONFIG_SR_WN_WN9S_HILEXIN=y",
+                "CONFIG_SR_WN_WN9S_HIESP=y",
+                "CONFIG_SR_WN_WN9S_NIHAOXIAOZHI=y",
+                "CONFIG_SR_WN_WN9S_HIJASON=y",
+                "CONFIG_LV_FONT_MONTSERRAT_14=y",
+                "CONFIG_LV_FONT_MONTSERRAT_24=y",
+                "CONFIG_LV_FONT_MONTSERRAT_28=y",
+                "CONFIG_LV_FONT_MONTSERRAT_48=y"
+            ]
+        }
+    ]
+}
