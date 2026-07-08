@@ -176,4 +176,29 @@ If you have any ideas or suggestions, please feel free to raise Issues or join o
 
 ## Dataset
 
-<!-- Tambahkan deskripsi atau link dataset Anda di bawah ini -->
+### ESP32-C6 Super Mini Pin Configuration
+
+Berikut adalah dataset konfigurasi pin (GPIO) yang digunakan pada board **ESP32-C6 Super Mini** dalam proyek ini:
+
+| Komponen / Fungsi | Pin GPIO ESP32-C6 | Keterangan |
+| :--- | :--- | :--- |
+| **Audio I2S** | | *(Share BCLK/WS untuk INMP441 & MAX98357)* |
+| I2S BCLK | `GPIO_NUM_6` | |
+| I2S WS (LRCK) | `GPIO_NUM_7` | |
+| I2S DOUT (Speaker) | `GPIO_NUM_21` | |
+| I2S DIN (Mic) | `GPIO_NUM_20` | |
+| **Display (SPI)** | | |
+| MOSI (SDA) | `GPIO_NUM_2` | |
+| SCLK (SCL) | `GPIO_NUM_3` | |
+| CS | `GPIO_NUM_0` | |
+| DC | `GPIO_NUM_1` | |
+| RES (Reset) | `GPIO_NUM_22` | |
+| BLK (Backlight) | `GPIO_NUM_23` | |
+| **Tombol & LED** | | |
+| Built-in LED | `GPIO_NUM_15` | Active Level: 1 |
+| RGB LED | `GPIO_NUM_8` | |
+| BOOT Button | `GPIO_NUM_9` | |
+| CHAT Button | `GPIO_NUM_4` | Tombol tambahan untuk *listening / chat* |
+| **Relay** | | |
+| Relay CH 1 | `GPIO_NUM_18` | |
+| Relay CH 2 | `GPIO_NUM_19` | |
