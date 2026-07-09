@@ -1,0 +1,1 @@
+# firmware-xiaozhi-ai-esp32-c6-mini
